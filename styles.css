@@ -1,0 +1,117 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+  margin: 40px 0;
+}
+
+/* Program Penelitian Table */
+.research-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.research-table th,
+.research-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.research-table th {
+  background-color: #003366;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.research-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.research-table tr:hover {
+  background-color: #e0f7fa;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.status.completed {
+  background-color: #4caf50; /* Green for completed */
+}
+
+.status.ongoing {
+  background-color: #ff9800; /* Orange for ongoing */
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .research-table th,
+  .research-table td {
+    padding: 10px;
+  }
+}
